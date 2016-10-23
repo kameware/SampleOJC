@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="w7T-99-4g2">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Sample Download View Controller-->
+        <scene sceneID="Qry-M4-Ehu">
+            <objects>
+                <viewController id="w7T-99-4g2" customClass="SampleDownloadViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xxL-Vh-1dF"/>
+                        <viewControllerLayoutGuide type="bottom" id="BrJ-RE-VAt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nWq-sP-4Ke">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rCs-cn-KFe">
+                                <rect key="frame" x="240" y="285" width="120" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="IkB-jG-RLt"/>
+                                    <constraint firstAttribute="height" constant="30" id="VcU-pk-0A4"/>
+                                </constraints>
+                                <state key="normal" title="ダウンロード開始"/>
+                                <connections>
+                                    <action selector="tapDownloadBtn:" destination="w7T-99-4g2" eventType="touchUpInside" id="HEf-wX-2ja"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K3V-fJ-qVg">
+                                <rect key="frame" x="255" y="359" width="90" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="CXv-H0-7og"/>
+                                    <constraint firstAttribute="width" constant="90" id="WOe-Sz-Bz8"/>
+                                </constraints>
+                                <state key="normal" title="ファイル削除"/>
+                                <connections>
+                                    <action selector="tapDeleteBtn:" destination="w7T-99-4g2" eventType="touchUpInside" id="0mn-l1-Yh4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rCs-cn-KFe" firstAttribute="centerX" secondItem="nWq-sP-4Ke" secondAttribute="centerX" id="AQW-BV-SEM"/>
+                            <constraint firstItem="K3V-fJ-qVg" firstAttribute="centerX" secondItem="nWq-sP-4Ke" secondAttribute="centerX" id="YW5-8i-c3r"/>
+                            <constraint firstItem="rCs-cn-KFe" firstAttribute="centerY" secondItem="nWq-sP-4Ke" secondAttribute="centerY" id="avQ-4q-jFR"/>
+                            <constraint firstItem="K3V-fJ-qVg" firstAttribute="top" secondItem="rCs-cn-KFe" secondAttribute="bottom" constant="44" id="hUv-Do-a5E"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qrt-0D-QI6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398" y="382"/>
+        </scene>
+    </scenes>
+</document>
